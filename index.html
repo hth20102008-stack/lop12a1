@@ -20,35 +20,42 @@
         /* LOGO */
         .logoBox {
             position: fixed;
-            top: 15px;
-            right: 15px;
-            width: 95px;
-            text-align: center;
+            top: 20px;
+            right: 20px;
+            /* Flex để căn giữa */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 110px; /* đảm bảo chữ và logo nằm trong cùng width */
             z-index: 2000;
         }
 
         .logo {
-            width: 75px;
-            height: 75px;
-            border-radius: 16px;
+            width: 78px;
+            height: 78px;
+            border-radius: 18px;
+            background-image: url('logo.png');
             background-size: cover;
             background-position: center;
-            background-image: url('logo.png');
-            background-color: white;
-            padding: 4px;
-            box-shadow: 0 0 12px rgba(0,0,0,0.25);
+            background-color: #ffffff;
+            padding: 5px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.25);
         }
 
         .logoText {
-            font-size: 14px;
-            margin-top: 4px;
+            margin-top: 6px;
+            font-size: 15px;
             font-weight: 900;
-            color: #ffd700;
-            text-shadow: 0 0 5px #ff8800;
-            background: rgba(255,255,255,0.85);
-            padding: 4px 10px;
-            border-radius: 6px;
+            padding: 5px 14px;
+            color: #4DA3FF; /* XANH DA TRỜI */
+            background: rgba(255, 255, 255, 0.90);
+            border-radius: 10px;
+            border: 2px solid #fff;
+            text-shadow: 0 0 3px rgba(0,0,0,0.25), 0 0 6px rgba(77,163,255,0.6), 0 0 12px rgba(77,163,255,0.4);
+            box-shadow: 0 0 6px rgba(77,163,255,0.25), 0 0 12px rgba(77,163,255,0.25);
         }
+
 
         /* TIÊU ĐỀ */
         h1 {
