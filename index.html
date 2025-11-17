@@ -2,6 +2,7 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chúc Mừng Ngày Nhà Giáo Việt Nam 20/11</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
@@ -9,7 +10,7 @@
 <style>
     body {
         margin: 0;
-        background: linear-gradient(to bottom, #ffe7ec, #ffeef7, #ffffff);
+        background: linear-gradient(to bottom, #ffe5ef, #ffddeb, #ffeef7, white);
         font-family: "Poppins", sans-serif;
         overflow-x: hidden;
         text-align: center;
@@ -17,76 +18,72 @@
 
     /* LOGO + LỚP 12A1 */
     .logoBox {
-        position: fixed;
-        top: 15px;
-        right: 15px;
-        width: 150px;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 95px;
         text-align: center;
         z-index: 1000;
     }
 
     .logo {
-        width: 110px;
-        height: 110px;
-        margin: 0 auto;
-        border-radius: 15px;
-        background-image: url('logo.png'); /* đặt logo.png cùng thư mục */
+        width: 80px;
+        height: 80px;
+        background-image: url('logo.png');
         background-size: cover;
         background-position: center;
-        box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        margin: 0 auto;
     }
 
     .logoText {
-        margin-top: 6px;
-        font-size: 18px;
+        margin-top: 5px;
+        font-size: 15px;
         font-weight: 900;
         color: #fff6c0;
         text-shadow:
             0 0 4px #ffdd55,
-            0 0 8px #ffcc33,
-            0 0 12px #ffaa00,
-            0 0 16px #ff8800,
-            0 0 20px #ff6600;
+            0 0 6px #ffcc33,
+            0 0 10px #ffaa00;
     }
 
     /* TIÊU ĐỀ */
     h1 {
+        margin-top: 110px;
         font-family: "Pacifico", cursive;
-        font-size: 46px;
+        font-size: 32px;
+        font-weight: 600;
         color: #d12e5f;
-        margin-top: 150px;
-        animation: fadeIn 2s ease forwards;
+        padding: 0 15px;
+        line-height: 1.3;
     }
 
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* VIDEO BỘ KHUNG */
+    /* VIDEO */
     .videoBox {
-        margin-top: 30px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
     }
 
     .videoThumb {
-        width: 80%;
-        max-width: 550px;
+        width: 88%;
+        max-width: 450px;
         border-radius: 15px;
-        box-shadow: 0 0 15px #ffb6c1;
-        border: none;
+        box-shadow: 0 0 12px #ffb6c1;
     }
 
     /* CHỮ CHẠY */
     .marquee {
         position: fixed;
-        bottom: 20px;
+        bottom: 12px;
         width: 100%;
-        font-size: 22px;
+        font-size: 16px;
         font-weight: 700;
         color: #c0392b;
         white-space: nowrap;
         overflow: hidden;
-        animation: run 15s linear infinite;
+        animation: run 12s linear infinite;
         z-index: 999;
     }
 
@@ -94,6 +91,7 @@
         from { transform: translateX(100%); }
         to { transform: translateX(-100%); }
     }
+
 </style>
 </head>
 
@@ -105,13 +103,13 @@
     <div class="logoText">LỚP 12A1</div>
 </div>
 
+<!-- TIÊU ĐỀ -->
 <h1>🌸 Chúc Mừng Ngày Nhà Giáo Việt Nam 20/11 🌸</h1>
 
 <!-- VIDEO -->
 <div class="videoBox">
     <a href="https://www.youtube.com/watch?v=OY2L6-VwWqY" target="_blank">
-        <img class="videoThumb"
-             src="https://img.youtube.com/vi/OY2L6-VwWqY/maxresdefault.jpg">
+        <img class="videoThumb" src="https://img.youtube.com/vi/OY2L6-VwWqY/sddefault.jpg">
     </a>
 </div>
 
@@ -120,7 +118,7 @@
     💖 LỚP 12A1 KÍNH CHÚC THẦY CÔ NGÀY 20/11 VUI VẺ – HẠNH PHÚC – TRÀN ĐẦY YÊU THƯƠNG 💖
 </div>
 
-<!-- 🌸 HOA RƠI – THƯ VIỆN NGOÀI -->
+<!-- HOA RƠI -->
 <script type="text/javascript" src="http://webquangnam.com/jsShare/hoa-dao-roi.js"></script>
 
 </body>
