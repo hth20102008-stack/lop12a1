@@ -15,7 +15,7 @@
         text-align: center;
     }
 
-    /* Logo + chữ góc phải */
+    /* LOGO + LỚP 12A1 */
     .logoBox {
         position: fixed;
         top: 15px;
@@ -30,12 +30,12 @@
         height: 110px;
         margin: 0 auto;
         border-radius: 15px;
+        background-image: url('logo.png'); /* đặt logo.png cùng thư mục */
         background-size: cover;
         background-position: center;
         box-shadow: 0 0 10px rgba(0,0,0,0.25);
     }
 
-    /* CHỮ LỚP 12A1 VIỀN VÀNG KIM */
     .logoText {
         margin-top: 6px;
         font-size: 18px;
@@ -49,12 +49,12 @@
             0 0 20px #ff6600;
     }
 
-    /* Tiêu đề */
+    /* TIÊU ĐỀ */
     h1 {
         font-family: "Pacifico", cursive;
-        font-size: 50px;
+        font-size: 46px;
         color: #d12e5f;
-        margin-top: 140px;
+        margin-top: 150px;
         animation: fadeIn 2s ease forwards;
     }
 
@@ -63,31 +63,14 @@
         to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Hoa rơi */
-    .petal {
-        position: fixed;
-        top: -10px;
-        width: 20px;
-        height: 20px;
-        background-image: url('https://i.imgur.com/zn2wFvL.png');
-        background-size: cover;
-        opacity: 0.9;
-        animation: fall linear infinite;
-        z-index: 10;
-    }
-    @keyframes fall {
-        to {
-            transform: translateY(120vh) rotate(360deg);
-        }
+    /* VIDEO BỘ KHUNG */
+    .videoBox {
+        margin-top: 30px;
     }
 
-    /* Video */
-    .videoBox {
-        margin-top: 50px;
-    }
-    iframe {
-        width: 70%;
-        height: 350px;
+    .videoThumb {
+        width: 80%;
+        max-width: 550px;
         border-radius: 15px;
         box-shadow: 0 0 15px #ffb6c1;
         border: none;
@@ -98,59 +81,47 @@
         position: fixed;
         bottom: 20px;
         width: 100%;
-        font-size: 26px;
+        font-size: 22px;
         font-weight: 700;
         color: #c0392b;
         white-space: nowrap;
         overflow: hidden;
         animation: run 15s linear infinite;
+        z-index: 999;
     }
 
     @keyframes run {
         from { transform: translateX(100%); }
         to { transform: translateX(-100%); }
     }
-
 </style>
 </head>
+
 <body>
 
-<!-- LOGO + CHỮ “LỚP 12A1” VIỀN VÀNG KIM -->
+<!-- LOGO -->
 <div class="logoBox">
-    <div class="logo" style="background-image: url('https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/306084121_107549665431771_6497543810385325431_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEgeh2WZk_fDuE7bnfYkLRGVOS9kFwQsGFU5L2QXBCwYTK_GdEqFISkp5SaMUIhYBHfKLIf1QN2Mpqn-jtqp4GQ&_nc_ohc=pjteoFYasugQ7kNvwEJcjAC&_nc_oc=AdnFEhAlTROkiSpHVKo05v8tGl01_JfuygUEKWmINgV1PphOwzkRfGlE05ii9REtytwHvKpMzdTEJgEYgcZ9Nium&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=XYnlojyCJu0SDZyz4Kmksw&oh=00_AfhVYAJR2MhjYCr4FISII4vUmMXucalROpVK0lB-8mC6zw&oe=69208CB8');"></div>
-
-    <div class="logoText">
-        LỚP 12A1
-    </div>
+    <div class="logo"></div>
+    <div class="logoText">LỚP 12A1</div>
 </div>
 
 <h1>🌸 Chúc Mừng Ngày Nhà Giáo Việt Nam 20/11 🌸</h1>
 
+<!-- VIDEO -->
 <div class="videoBox">
     <a href="https://www.youtube.com/watch?v=OY2L6-VwWqY" target="_blank">
-        <img src="https://img.youtube.com/vi/OY2L6-VwWqY/maxresdefault.jpg" 
-             style="width:45%; border-radius:15px; box-shadow:0 0 15px #ffb6c1;">
+        <img class="videoThumb"
+             src="https://img.youtube.com/vi/OY2L6-VwWqY/maxresdefault.jpg">
     </a>
 </div>
 
-
-
-<!-- CHỮ CHẠY NÈ -->
+<!-- CHỮ CHẠY -->
 <div class="marquee">
     💖 LỚP 12A1 KÍNH CHÚC THẦY CÔ NGÀY 20/11 VUI VẺ – HẠNH PHÚC – TRÀN ĐẦY YÊU THƯƠNG 💖
 </div>
 
-<script>
-function createPetal() {
-    const petal = document.createElement("div");
-    petal.classList.add("petal");
-    petal.style.left = Math.random() * 100 + "vw";
-    petal.style.animationDuration = (3 + Math.random() * 4) + "s";
-    document.body.appendChild(petal);
-    setTimeout(() => petal.remove(), 7000);
-}
-setInterval(createPetal, 200);
-</script>
+<!-- 🌸 HOA RƠI – THƯ VIỆN NGOÀI -->
+<script type="text/javascript" src="http://webquangnam.com/jsShare/hoa-dao-roi.js"></script>
 
 </body>
 </html>
